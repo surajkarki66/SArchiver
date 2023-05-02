@@ -5,7 +5,7 @@ import 'package:sarchiver/commands/decompress_command.dart';
 
 void main(List<String> args) async {
   final runner = CommandRunner('sarchiver',
-      '''A CLI app to compress and decompress various files into various compression formats. Supported compression formats: Zip, Tar, ZLib, GZip, BZip2, XZ ''')
+      '''A CLI app to compress and decompress various files into various compression formats. Supported compression formats: Zip, Tar ''')
     ..addCommand(CompressCommand())
     ..addCommand(DecompressCommand());
 
