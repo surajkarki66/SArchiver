@@ -9,6 +9,7 @@ environment:
 dependencies:
   archive: ^3.3.7
   args: ^2.4.0
+  cli_spinner: ^1.0.4
   path: ^1.8.0
 
 dev_dependencies:

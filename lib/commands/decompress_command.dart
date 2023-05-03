@@ -13,7 +13,9 @@ class DecompressCommand extends Command {
         help: 'Specify path to input compressed file',
       )
       ..addOption('output-file-path',
-          abbr: 'o', help: 'Specify path to store decompressed file');
+          abbr: 'o',
+          defaultsTo: Directory.current.path,
+          help: 'Specify path to store decompressed file');
   }
 
   @override
@@ -26,19 +28,15 @@ class DecompressCommand extends Command {
   void run() {
     final bool? isInputFilePathParsed =
         argResults?.wasParsed("input-file-path");
-    final bool? isOutputFilePathParsed =
-        argResults?.wasParsed("output-file-path");
-
-    if (isInputFilePathParsed! && isOutputFilePathParsed!) {
-      final Archiver compression = Archiver(
-          inputFilePath: argResults?["input-file-path"],
+    if (isInputFilePathParsed!) {
+      final Archiver archiver = Archiver(
+          inputPath: argResults?["input-file-path"],
           outputFilePath: argResults?["output-file-path"],
           format: path.extension(argResults?["input-file-path"]));
 
-      compression.decompress();
+      archiver.decompress();
     } else {
-      stderr.write(
-          "Option --input-file-path or -i and --output-file-path or -o are mandatory.\n");
+      stderr.write("Option --input-file-path or -i is mandatory.\n");
     }
   }
 }
