@@ -36,6 +36,9 @@ A CLI app to compress and decompress various files into various compression form
 -h, --help<br>
 Display help
 
+-v, --version<br>
+Display version
+
 
 **Available Commands**
 
