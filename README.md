@@ -6,7 +6,7 @@ A CLI app to compress and decompress various files into various compression form
 
 ### 1. Using binary executable
 
-#### Download latest binary release from [here](https://github.com/surajkarki66/SArchiver/releases/tag/sarchiver0.0.1)
+#### Download latest binary release from [here](https://github.com/surajkarki66/SArchiver/releases/tag/sarchiver0.0.3)
 
 ```bash
   $ ./sarchiver
