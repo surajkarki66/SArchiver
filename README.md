@@ -39,26 +39,26 @@ Display help
 
 **Available Commands**
 
-compress<br>
+`compress`<br>
 Compress files into a specific compression format.
 
-decompress<br>
+`decompress`<br>
 Decompress the compressed file into original files.
 
 **Compress Arguments**
 
--i, --input-path<br>          
+-i, --input-path<br>
 Specify path to input file or directory
 
 -o, --output-file-path<br>
 Specify path to store compressed file
 
--f, --format<br>              
+-f, --format<br>
 Specify compression file format [zip (default), tar]
 
 **Decompress Arguments**
 
--i, --input-file-path<br>          
+-i, --input-file-path<br>
 Specify path to input compressed file
 
 -o, --output-file-path<br>
