@@ -1,8 +1,11 @@
 name: sarchiver
 description: "A CLI app to compress and decompress various files into various compression formats. Supported compression formats: Zip, Tar"
-version: 0.0.1
+version: 0.0.3
 homepage: https://github.com/surajkarki66/SArchiver
 repository: https://github.com/surajkarki66/SArchiver
+
+executables:
+  sarchiver:
 
 environment:
   sdk: ">=2.19.6 <3.0.0"
